@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plumbing Basics - Course</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #115e59;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .course-box {
+            background-color: #dcdcdc;
+            margin: 15px;
+            padding: 20px;
+            width: calc(33% - 30px);
+            text-align: center;
+            box-sizing: border-box;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .course-box h3 {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .course-box p {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .course-box:hover {
+            transform: scale(1.05);
+        }
+
+        .start-button {
+            background-color: #115e59;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .start-button:hover {
+            background-color: #0056b3;
+        }
+
+        .start-button:active {
+            background-color: #004085;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .course-box {
+                width: calc(50% - 30px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .course-box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Plumbing Basics: Learn Essential Plumbing Skills</h1>
+        <p>Gain practical plumbing knowledge and techniques to handle basic plumbing tasks and repairs.</p>
+    </header>
+
+    <div class="container">
+        <div class="course-box completed">
+            <h3>Lesson 1: Introduction to Plumbing</h3>
+            <p>Learn the fundamentals of plumbing, including tools, materials, and safety measures.</p>
+        </div>
+        <div class="course-box">
+            <h3>Lesson 2: Understanding Water Systems</h3>
+            <p>Understand how water systems work, including pipes, valves, and pressure regulation.</p>
+        </div>
+        <div class="course-box completed">
+            <h3>Lesson 3: Pipe Installation</h3>
+            <p>Learn the correct methods for installing and repairing pipes for water supply and drainage.</p>
+        </div>
+        <div class="course-box">
+            <h3>Lesson 4: Fixing Leaks</h3>
+            <p>Master techniques for finding and fixing leaks in pipes, faucets, and other fixtures.</p>
+        </div>
+        <div class="course-box completed">
+            <h3>Lesson 5: Drain Cleaning</h3>
+            <p>Learn how to effectively clean drains and remove blockages without causing damage.</p>
+        </div>
+        <div class="course-box">
+            <h3>Lesson 6: Installing Faucets and Fixtures</h3>
+            <p>Understand how to install various plumbing fixtures, such as faucets, showerheads, and toilets.</p>
+        </div>
+        <div class="course-box">
+            <h3>Lesson 7: Troubleshooting Plumbing Problems</h3>
+            <p>Learn how to diagnose and solve common plumbing issues such as low water pressure or clogged pipes.</p>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin: 20px;">
+        <button class="start-button">Start This Course</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Plumbing Basics Course. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
