@@ -7,11 +7,45 @@ body {
 }
 
 header {
+    background-color: #115e59;
+    color: #fff;
+    display: flex; /* Use flexbox for easy layout */
+    justify-content: space-between; /* Space between company name and links */
+    align-items: center; /* Center vertically */
+    padding: 10px 20px;
+  }
+
+  .name {
+    margin-left: 15px;
+    font-size: 2em; /* Bigger font size */
+    font-weight: bold;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    display: inline-block;
+    justify-content: space-evenly;
+    margin-left: 15px;
+  }
+
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /*hihi*/
+
+nav {
     background: #115e59;
     color: white;
-    padding: 1rem 0;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0.01% 2%;
+    text-align: left;
 }
 
 .hero {
