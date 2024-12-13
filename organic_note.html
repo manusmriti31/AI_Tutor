@@ -3,136 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Organic Farming Notebook</title>
+    <title>Organic Farming - Course</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7f6;
             margin: 0;
             padding: 0;
-            background-color: #f3f4f6;
             color: #333;
         }
 
         header {
-            background-color: #0d9488;
+            background-color: #115e59;
             color: white;
+            padding: 15px 0;
             text-align: center;
-            padding: 1.5rem 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2rem;
-        }
-
-        header p {
-            margin: 0.5rem 0 0;
-            font-size: 1rem;
         }
 
         .container {
-            padding: 2rem;
-            max-width: 960px;
-            margin: 2rem auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .chapter {
+            width: 90%;
+            margin: 20px auto;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 1.5rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .chapter-box {
+            background-color: #dcdcdc;
+            margin: 15px;
+            padding: 20px;
+            width: calc(33% - 30px);
             text-align: center;
-            cursor: pointer;
-            transition: transform 0.3s, box-shadow 0.3s;
+            box-sizing: border-box;
+            border-radius: 8px;
+            transition: all 0.3s ease;
         }
 
-        .chapter.completed {
-            background: linear-gradient(100deg, #a8e063, #faffd1);
-            color: #333;
+        .chapter-box.completed {
+            background-color: #0d9488;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
-        .chapter.not-started {
-            background-color: #e8e8e8;
-            color: #888;
+        .chapter-box:not(.completed) {
+            background-color: #e0e0e0;
+            color: #777;
         }
 
-        .chapter h2 {
+        .chapter-box h3 {
+            font-size: 20px;
             margin: 0;
-            font-size: 1.1rem;
         }
 
-        .chapter p {
-            margin: 0.5rem 0 0;
-            font-size: 0.9rem;
+        .chapter-box p {
+            font-size: 14px;
+            margin-top: 10px;
         }
 
-        .chapter:hover:not(.not-started) {
+        .chapter-box:hover {
             transform: scale(1.05);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
 
         footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #0d9488;
+            background-color: #333;
             color: white;
-            position: fixed;
-            bottom: 0;
+            text-align: center;
+            padding: 10px 0;
             width: 100%;
-            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+            bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .chapter-box {
+                width: calc(50% - 30px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .chapter-box {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Organic Farming Notebook</h1>
-        <p>Learn sustainable farming techniques with practical guidance.</p>
+        <h1>Organic Farming: Learn Sustainable Farming Techniques</h1>
+        <p>Practical Guidance for Growing Organic Crops</p>
     </header>
 
     <div class="container">
-        <!-- Easy Topics -->
-        <div class="chapter completed" onclick="alert('You have completed this chapter!')">
-            <h2>1. Introduction to Organic Farming</h2>
-            <p>Understand the basics of organic farming principles and benefits.</p>
+        <div class="chapter-box completed">
+            <h3>Chapter 1: Introduction to Organic Farming</h3>
+            <p>Learn the fundamentals of organic farming, its principles, and benefits.</p>
         </div>
-
-        <div class="chapter completed" onclick="alert('You have completed this chapter!')">
-            <h2>2. Soil Health and Management</h2>
-            <p>Explore how to maintain healthy and fertile soil organically.</p>
+        <div class="chapter-box">
+            <h3>Chapter 2: Soil Health and Fertility</h3>
+            <p>Understand the importance of soil health and methods to improve fertility organically.</p>
         </div>
-
-        <!-- Intermediate Topics -->
-        <div class="chapter not-started">
-            <h2>3. Organic Pest Control</h2>
-            <p>Learn natural ways to manage pests and diseases.</p>
+        <div class="chapter-box completed">
+            <h3>Chapter 3: Pest Management</h3>
+            <p>Discover natural and sustainable ways to manage pests in organic farming.</p>
         </div>
-
-        <div class="chapter not-started">
-            <h2>4. Crop Rotation Techniques</h2>
-            <p>Discover how to use crop rotation for sustainable yields.</p>
+        <div class="chapter-box">
+            <h3>Chapter 4: Crop Rotation</h3>
+            <p>Explore the benefits and techniques of crop rotation in organic farming systems.</p>
         </div>
-
-        <!-- Advanced Topics -->
-        <div class="chapter not-started">
-            <h2>5. Advanced Composting Methods</h2>
-            <p>Deep dive into advanced techniques for nutrient-rich compost.</p>
+        <div class="chapter-box">
+            <h3>Chapter 5: Water Management</h3>
+            <p>Learn efficient water management techniques for organic farming.</p>
         </div>
-
-        <div class="chapter not-started">
-            <h2>6. Organic Certification Process</h2>
-            <p>Understand the process to certify your farm as organic.</p>
+        <div class="chapter-box">
+            <h3>Chapter 6: Harvesting and Post-Harvest Management</h3>
+            <p>Get practical advice on harvesting organic crops and post-harvest practices.</p>
+        </div>
+        <div class="chapter-box">
+            <h3>Chapter 7: Certification and Marketing</h3>
+            <p>Learn how to get your farm certified organic and market your products effectively.</p>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Organic Farming Notebook. All rights reserved.</p>
+        <p>&copy; 2024 Organic Farming Course. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
