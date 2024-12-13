@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Learning Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: #f8f9fa;
+        }
+        header {
+            background: #115e59;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .hero {
+            padding: 2rem;
+            text-align: center;
+            background: linear-gradient(135deg, #e3ffe7, #d9e7ff);
+            border-bottom: 1px solid #ddd;
+        }
+        .hero h1 {
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            color: #333;
+        }
+        .hero p {
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            color: #555;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .card h3 {
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        .card p {
+            color: #555;
+            margin-bottom: 1rem;
+        }
+        .progress-container {
+            background: #ddd;
+            height: 8px;
+            width: 100%;
+            border-radius: 5px;
+            margin: 1rem 0;
+        }
+        .progress-bar {
+            background: #0d9488;
+            height: 8px;
+            border-radius: 5px;
+        }
+        .create-button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: #0d9488;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            text-align: center;
+            transition: background 0.3s ease;
+        }
+        .create-button:hover {
+            background: #0d9488;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Personalized Learning Platform</h1>
+    </header>
+
+    <div class="hero">
+        <h1>Welcome to Your Learning Journey</h1>
+        <p>Personalized Learning | Accessibility First | Skill Development | Dynamic Content</p>
+    </div>
+
+    <div class="container">
+        <h2>My Notebooks</h2>
+        <a href="#" class="create-button">+ Create New Notebook</a>
+        <div class="grid">
+            <div class="card">
+                <h3>Organic Farming</h3>
+                <p>Learn sustainable farming techniques with practical guidance.</p>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 65%;"></div>
+                </div>
+                <p>65% Complete | 3 Chapters</p>
+            </div>
+
+            <div class="card">
+                <h3>Web Development Fundamentals</h3>
+                <p>Master HTML, CSS, and JavaScript basics.</p>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 40%;"></div>
+                </div>
+                <p>40% Complete | 2 Chapters</p>
+            </div>
+
+            <div class="card">
+                <h3>Data Structures</h3>
+                <p>Understanding fundamental data structures and algorithms.</p>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 25%;"></div>
+                </div>
+                <p>25% Complete | 2 Chapters</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Recommended for You</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Basic English</h3>
+                <p>Improve your communication skills with foundational English lessons.</p>
+                <p>Market Demand: 85%</p>
+            </div>
+
+            <div class="card">
+                <h3>Plumbing Basics</h3>
+                <p>Learn essential plumbing skills and techniques.</p>
+                <p>Market Demand: 78%</p>
+            </div>
+
+            <div class="card">
+                <h3>Advanced Gardening</h3>
+                <p>Discover advanced techniques for maintaining and designing gardens.</p>
+                <p>Market Demand: 92%</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
